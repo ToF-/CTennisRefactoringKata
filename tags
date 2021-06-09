@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+P1point	TennisGame2.h	/^    int P1point;$/;"	m	struct:TennisGame
+P1res	TennisGame2.h	/^    const char* P1res;$/;"	m	struct:TennisGame
+P2point	TennisGame2.h	/^    int P2point;$/;"	m	struct:TennisGame
+P2res	TennisGame2.h	/^    const char* P2res;$/;"	m	struct:TennisGame
+Parameter	TennisTest.c	/^struct Parameter$/;"	s	file:
+TENNIS_GAME2_H	TennisGame2.h	/^#define TENNIS_GAME2_H$/;"	d
+TENNIS_GAME_H	TennisGame.h	/^#define TENNIS_GAME_H$/;"	d
+TennisGame	TennisGame1.c	/^struct TennisGame$/;"	s	file:
+TennisGame	TennisGame2.h	/^struct TennisGame$/;"	s
+TennisGame	TennisGame3.c	/^struct TennisGame$/;"	s	file:
+TennisGame_Create	TennisGame1.c	/^struct TennisGame* TennisGame_Create(const char* player1Name, const char* player2Name)$/;"	f
+TennisGame_Create	TennisGame2.c	/^struct TennisGame* TennisGame_Create(const char* player1Name, const char* player2Name)$/;"	f
+TennisGame_Create	TennisGame3.c	/^struct TennisGame* TennisGame_Create(const char* p1N, const char* p2N)$/;"	f
+TennisGame_GetScore	TennisGame1.c	/^const char* TennisGame_GetScore(struct TennisGame* game)$/;"	f
+TennisGame_GetScore	TennisGame2.c	/^const char* TennisGame_GetScore(struct TennisGame* game)$/;"	f
+TennisGame_GetScore	TennisGame3.c	/^const char* TennisGame_GetScore(struct TennisGame* g)$/;"	f
+TennisGame_P1Score	TennisGame2.c	/^void TennisGame_P1Score(struct TennisGame* game)$/;"	f
+TennisGame_P2Score	TennisGame2.c	/^void TennisGame_P2Score(struct TennisGame* game)$/;"	f
+TennisGame_SetP1Score	TennisGame2.c	/^void TennisGame_SetP1Score(struct TennisGame* game, int number)$/;"	f
+TennisGame_SetP2Score	TennisGame2.c	/^void TennisGame_SetP2Score(struct TennisGame* game, int number)$/;"	f
+TennisGame_WonPoint	TennisGame1.c	/^void TennisGame_WonPoint(struct TennisGame* game, const char* playerName)$/;"	f
+TennisGame_WonPoint	TennisGame2.c	/^void TennisGame_WonPoint(struct TennisGame* game, const char* player)$/;"	f
+TennisGame_WonPoint	TennisGame3.c	/^void TennisGame_WonPoint(struct TennisGame* g, const char* pN)$/;"	f
+checkRealisticTennisGame	TennisTest.c	/^static void checkRealisticTennisGame(void** state)$/;"	f	file:
+checkScore	TennisTest.c	/^static void checkScore(void** state)$/;"	f	file:
+expectedScore	TennisTest.c	/^    const char* expectedScore;$/;"	m	struct:Parameter	file:
+m_score1	TennisGame1.c	/^    int m_score1;$/;"	m	struct:TennisGame	file:
+m_score2	TennisGame1.c	/^    int m_score2;$/;"	m	struct:TennisGame	file:
+main	TennisTest.c	/^int main(void)$/;"	f
+maxScore	TennisTest.c	/^static int maxScore(int a, int b)$/;"	f	file:
+p1	TennisGame3.c	/^    int p1;$/;"	m	struct:TennisGame	file:
+p1N	TennisGame3.c	/^    const char* p1N;$/;"	m	struct:TennisGame	file:
+p2	TennisGame3.c	/^    int p2;$/;"	m	struct:TennisGame	file:
+p2N	TennisGame3.c	/^    const char* p2N;$/;"	m	struct:TennisGame	file:
+player1Name	TennisGame1.c	/^    const char* player1Name;$/;"	m	struct:TennisGame	file:
+player1Name	TennisGame2.h	/^    const char* player1Name;$/;"	m	struct:TennisGame
+player1Score	TennisTest.c	/^    int player1Score;$/;"	m	struct:Parameter	file:
+player2Name	TennisGame1.c	/^    const char* player2Name;$/;"	m	struct:TennisGame	file:
+player2Name	TennisGame2.h	/^    const char* player2Name;$/;"	m	struct:TennisGame
+player2Score	TennisTest.c	/^    int player2Score;$/;"	m	struct:Parameter	file:
+s	TennisGame3.c	/^    char s[18];$/;"	m	struct:TennisGame	file:
+score	TennisGame1.c	/^    char score[18];$/;"	m	struct:TennisGame	file:
+score	TennisGame2.h	/^    char score[18];$/;"	m	struct:TennisGame
