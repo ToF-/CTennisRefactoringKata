@@ -14,7 +14,7 @@ struct TennisGame
 
 struct TennisGame* TennisGame_Create(const char* p1N, const char* p2N)
 {
-    struct TennisGame* newGame = malloc(sizeof(struct TennisGame));
+    struct TennisGame* newGame = (TennisGame *)malloc(sizeof(struct TennisGame));
     newGame->p2 = 0;
     newGame->p1 = 0;
     newGame->p1N = p1N;

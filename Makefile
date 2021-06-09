@@ -11,7 +11,7 @@ CPPFLAGS += -I$(CPPUTEST_HOME)/include
 # Flags passed to the C++ compiler.
 CFLAGS += -g -Wall -Wextra
 
-VERSION=1
+VERSION=3
 
 LD_LIBRARIES = -L$(CPPUTEST_HOME)/lib -lCppUTest
 unit : TennisTest.c TennisGame$(VERSION).c

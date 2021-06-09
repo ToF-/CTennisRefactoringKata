@@ -65,10 +65,9 @@ TEST(MyCode, allscorestest)
     { 16, 14, "Win for player1" },
     { 14, 16, "Win for player2" }, };
 
-    for (int caseNum = 0; caseNum < (sizeof param / sizeof param[0]); caseNum++)
+    for (unsigned int caseNum = 0; caseNum < (sizeof param / sizeof param[0]); caseNum++)
     {
         const char *name = param[caseNum].expectedScore;
-        printf("%d: %s\n", caseNum, name);
         int player1Score = param[caseNum].player1Score;
         int player2Score = param[caseNum].player2Score;
         
@@ -86,6 +85,23 @@ TEST(MyCode, allscorestest)
     }
 }
 
+TEST(MyCode, realisticGame)
+{
+    const char* points[] = { "player1", "player1", "player2",
+                             "player2", "player1", "player1" };
+    const char* expectedScores[] = { "Fifteen-Love", "Thirty-Love", "Thirty-Fifteen",
+                                     "Thirty-All", "Forty-Thirty", "Win for player1" };
+    struct TennisGame* game = TennisGame_Create("player1", "player2");
+
+    for (int i = 0; i < 6; i++)
+    {
+        TennisGame_WonPoint(game, points[i]);
+        STRCMP_EQUAL(expectedScores[i], TennisGame_GetScore(game));
+    }
+
+    free(game);
+
+}
 int
 main(int ac, char** av)
 {
